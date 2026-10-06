@@ -1,0 +1,1 @@
+export default function Section({id,eyebrow,title,children,className=''}){return(<section id={id} className={`relative px-6 py-24 md:py-32 ${className}`}><div className="mx-auto max-w-6xl"><div className="reveal mb-14 max-w-2xl">{eyebrow&&<p className="eyebrow">{eyebrow}</p>}<h2 className="h2">{title}</h2></div>{children}</div></section>)}

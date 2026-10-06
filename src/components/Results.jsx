@@ -1,0 +1,5 @@
+import Section from './Section';import {testimonials,cases} from '../data/content';
+export default function Results(){return(<Section id="resultados" eyebrow="Prova social" title="Resultados e depoimentos">
+<p className="reveal mb-8 rounded-xl border border-dashed border-electric/40 bg-electric/5 p-4 text-sm text-electric/90">Conteúdo ilustrativo: substitua os placeholders por cases e depoimentos reais autorizados da Emety (arquivo src/data/content.js).</p>
+<div className="mb-5 grid gap-5 md:grid-cols-3">{cases.map(([n,l,s])=><div key={l} className="card reveal text-center"><div className="font-display text-3xl text-electric">{n}</div><div className="mt-2">{l}</div><div className="mt-1 text-xs text-white/45">{s}</div></div>)}</div>
+<div className="grid gap-5 md:grid-cols-3">{testimonials.map(t=><figure key={t.i} className="card reveal"><blockquote className="text-sm text-white/70">“{t.q}”</blockquote><figcaption className="mt-5 text-sm"><b>{t.n}</b><div className="text-xs text-white/45">{t.r}</div></figcaption></figure>)}</div></Section>)}

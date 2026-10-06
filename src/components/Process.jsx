@@ -1,0 +1,2 @@
+import Section from './Section';import {steps} from '../data/content';
+export default function Process(){return(<Section id="processo" eyebrow="Metodologia" title="Um processo claro, do diagnóstico à otimização"><div className="grid gap-5 md:grid-cols-4">{steps.map(([t,d],i)=><div key={t} className="reveal relative border-t border-electric/40 pt-6" style={{transitionDelay:`${i*80}ms`}}><div className="font-display text-5xl text-white/10">{i+1}</div><h3 className="mt-2 font-display text-xl">{t}</h3><p className="mt-2 text-sm text-white/60">{d}</p></div>)}</div></Section>)}
